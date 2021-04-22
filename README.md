@@ -15,4 +15,4 @@ MINUS,
 NEGATIVE,
  --Example -- 
 12 + 1 - -2 would look like ONETWOPLUSONEMINUSNEGATIVETWO
-result shoudl be 15 or ONEFIVE
+result should be 15 or ONEFIVE
