@@ -1,7 +1,9 @@
 test = 'ONETWOPLUSONEMINUSNEGATIVETWO'
+#two variables that wil be cariong all the data
 exp = ''
 result = ''
 print('The Text : ' + test)
+#loops through the expression 
 for c in test:
     exp = exp + c.lower()
     #check for numbers and other expressions
@@ -44,9 +46,13 @@ for c in test:
     elif exp == 'nine':
         result = result + '9'
         exp = ""
+# splits the new string into a list by whitespace
 exp = result.split()
 print('Parsed text to numbers : ' + result)
+#Actual calculation of the expresion begins
+#makes result a variable to hold an int
 result = int(exp[0])
+#flags used to express what calculation is being preformed
 add = False
 sub = False
 for x in exp[1:]:
@@ -57,11 +63,12 @@ for x in exp[1:]:
     elif sub == True:
         result = result - int(x)
         sub = False
-    #Flags
+    #Flags being triggered
     if x == '+':
         add = True
     elif x == '-':
         sub = True
+# now to read the result and make it into a word expression
 exp = str(result)
 print('The result of doing math : ' + exp)
 result = ''
@@ -90,4 +97,3 @@ for x in exp:
     elif x == '9':
         result = result + 'NINE'
 print('Reworded : ' + result)
-
